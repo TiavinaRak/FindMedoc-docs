@@ -45,16 +45,13 @@ Application web qui aide à trouver un médicament selon ses symptômes, une mal
 
 9 tables MySQL : `utilisateurs`, `medicaments`, `maladies`, `symptomes`, `pharmacies`, `recherches`, `enregistrements` (favoris) et les tables d'association `maladie_medicaments`, `maladie_symptomes`, `medicament_pharmacie`.
 
-<!-- IMAGE (optionnelle) : diagramme entité-relation de la base de données (ex. exporté depuis MySQL Workbench) -->
+![Database](images/FM-DB.png)
 
 ## Mes tâches
 
-<!-- À ajuster : garde seulement ce que tu as réalisé toi-même -->
-- Conception du schéma relationnel (clés étrangères, `ON DELETE CASCADE`, index de recherche).
 - Écriture des procédures stockées (statistiques utilisateur, favoris, historique, fréquence des recherches).
-- Développement des routes Flask (authentification, recherche, favoris, pharmacies).
+- Développement des routes Flask (authentification, favoris, historiques).
 - Recherche multicritère en SQL (jointures maladies ↔ symptômes ↔ médicaments) avec requêtes paramétrées.
-- Page pharmacies avec Leaflet, géolocalisation et tri par distance.
 - Validation des formulaires côté client (regex pour nom, courriel et mot de passe robuste).
 
 ## Ce que j'ai appris
@@ -68,4 +65,4 @@ Application web qui aide à trouver un médicament selon ses symptômes, une mal
 
 ## Code source
 
-Le code source est hébergé dans un dépôt privé (projet universitaire, Université Laval). Il est disponible sur demande.
+Le code source est hébergé dans un dépôt privé (projet universitaire, Université Laval).
